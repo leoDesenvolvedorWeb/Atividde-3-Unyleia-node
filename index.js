@@ -10,7 +10,7 @@ connectToDatabase();
 const port = 3000;
 const segredo = "erfotoretratO2e34"
 
-app.use("/usuarios",usuario);
+app.use("/usuarios", usuarios);
 
 app.use(express.json());
 
