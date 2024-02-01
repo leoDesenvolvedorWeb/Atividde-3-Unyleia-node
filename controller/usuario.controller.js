@@ -1,7 +1,7 @@
 const Usuario = require("../model/usuario");
 const mongoose = require("mongoose");
 
-const empresas = [
+const usuarios = [
     {
         nome: "leo",
         email: "leoleo",
@@ -23,18 +23,18 @@ const empresas = [
 
 const find = (req,res) => {
     const id = new req.params.id;
-    res.send(empresas[id]);
+    res.send(usuarios[id]);
 }
 
 const findAllUsuario = (req,res) => {
-    res.send(empresas);
+    res.send(usuarios);
 }
 
 
 const createUsuario = (req,res) => {
     const usuario = req.body;
-    usuario.push(usuario);
-    res.send(usuario);
+    usuario.push(usuarios);
+    res.send(usuarios);
 }
 
 
