@@ -1,7 +1,9 @@
 const express = require("express");
 const connectToDatabase = require("./database/database");
+const usuario = require("./router/usuario.router");
 const authService = require("./service/auth.service");
 const jwt = require("jsonwebtoken");
+
 
 const app = express();
 
